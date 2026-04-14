@@ -1,0 +1,16 @@
+{
+  "name": "portfolio_walking",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./assets/scss/style.scss ./assets/css/style.css",
+    "watch:sass": "sass ./assets/scss/style.scss ./assets/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}

@@ -1,0 +1,42 @@
+/* -----------------------------------------------------------
+ * A Modern CSS Reset
+ * ----------------------------------------------------------- */
+
+/* 1. box-sizingの統一 */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. デフォルトの余白を削除 */
+  body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
+  
+  /* 3. 箇条書きのスタイル削除 */
+  ul[class], ol[class] {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* 4. 基本設定 */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  
+  /* 5. 画像やメディアのレスポンシブ対応 */
+  img, picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* 6. フォーム要素のフォント継承 */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. スムーズスクロール */
+  html {
+    scroll-behavior: smooth;
+  }

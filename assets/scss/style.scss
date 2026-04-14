@@ -1,0 +1,31 @@
+@use "abstracts/variables";
+@use "abstracts/mixin";
+
+@use "base/reset";
+@use "base/base";
+
+@use "layout/header";
+@use "layout/main";
+@use "layout/footer";
+
+@use "components/button";
+@use "components/card";
+@use "components/loading";
+
+@use "pages/home";
+
+/* ===============================
+abstracts/variables 変数
+abstracts/mixin mixin　
+
+base/reset 初期化
+base/base 基本設定
+
+layout/header サイト構造
+layout/footer サイト構造
+
+components/button ボタン 再利用パーツ
+components/card カード 再利用パーツ
+
+pages/home ページ固有のCSS
+================================ */ 

@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixin" as *;
+
+body {
+    color: $font-color;
+}

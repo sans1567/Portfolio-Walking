@@ -1,0 +1,43 @@
+@use "../abstracts/variables";
+
+/*ブレイクポイント*/
+@mixin pc {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tb {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: 390px) {
+        @content;
+    }
+}
+
+html {
+    @include tb {
+        font-size: variables.$tb-fontSize;
+    }
+
+    @include  sp{
+        font-size: variables.$sp-fontSize;
+    }    
+}
+/*共通パーツ*/
+@mixin container {
+    width: 100%;
+    max-width: variables.$max-width;
+    margin: 0px auto;
+    padding: 80px 20px;
+}
+
+@mixin mainTitle {
+    width: 100%;
+    max-width: variables.$max-width;
+    margin: 20px auto 0px;
+}

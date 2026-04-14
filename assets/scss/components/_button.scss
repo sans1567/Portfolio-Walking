@@ -1,0 +1,199 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixin" as *;
+
+/*ハンバーガーボタン*/
+.hamburger-button {
+    width: 44px;
+    height: 44px;
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 50%;
+    background-color: $bg-color4;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 2;
+    transform: translateY(-50%);
+    transition: all .3s;
+    /*768px以上非表示*/
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+
+    @media (min-width: 1000px) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    & span {
+        display: block;
+        width: 70%;
+        height: 2px;
+        border: none;
+        border-radius: 12px;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    & span:first-child {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    & span:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 1;
+        transition: all .3s;
+    }
+
+    & span:last-child {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &.active span:first-child {
+        width: 60%;
+        top: 48%;
+        left: 19%;
+        transform: rotate(135deg) translateY(-50%);
+    }
+
+    &.active span:nth-of-type(2){
+        opacity: 0;
+    }
+
+    &.active span:last-child {
+        width: 60%;
+        bottom: 50%;
+        left: 20%;
+        transform: rotate(-135deg) translateY(-50%);
+    }
+}
+/*スクロールボタン*/
+.scroll-btn {
+    width: 44px;
+    height: 44px;
+    background-color: $bg-color4;
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    transition: all .6s ease;
+    animation-name: scrollBtnAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-left: 2px solid rgba(0,0,0,0.5);
+        border-bottom: 2px solid rgba(0,0,0,0.5);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(135deg);
+    }
+}
+
+@keyframes scrollBtnAnimation {
+    0% {
+        transform:scale(1);
+    }
+
+    5% {
+        transform:scale(1.02);
+    }
+
+    10% {
+        transform:scale(1.04)
+    }
+
+    15% {
+        transform:scale(1.06)
+    }
+
+    20% {
+        transform:scale(1.08);
+    }
+
+    25% {
+        transform:scale(1.1);
+    }
+
+    30% {
+        transform:scale(1.12);
+    }
+
+    35% {
+        transform:scale(1.14);
+    }
+
+    40% {
+        transform:scale(1.16);
+    }
+
+    45% {
+        transform:scale(1.18);
+    }
+
+    50% {
+        transform:scale(1.2);
+    }
+
+    55% {
+        transform:scale(1.18);
+    }
+
+    60% {
+        transform:scale(1.16);
+    }
+
+    65% {
+        transform:scale(1.14);
+    }
+
+    70% {
+        transform:scale(1.12);
+    }
+
+    75% {
+        transform:scale(1.10);
+    }
+
+    80% {
+        transform:scale(1.08);
+    }
+
+    85% {
+        transform:scale(1.06);
+    }
+
+    90% {
+        transform:scale(1.04);
+    }
+
+    95% {
+        transform:scale(1.02);
+    }
+
+    100% {
+        transform:scale(1);
+    }
+}
+
+.scroll-btn.is-show {
+    opacity: 1;
+}

@@ -1,0 +1,124 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixin" as *;
+/*footer*/
+.footer {
+    background-color: #84c6e1;
+
+    .footer-wrapper {
+        width: 100%;
+        max-width: 900px;
+        margin: 0px auto;
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: row;
+
+        @include tb {
+            flex-direction: column;
+        }
+
+        .footer-logo {
+            width: 50%;
+            height: 80px;
+            margin: 0px auto;
+            padding-left: 110px;
+            justify-self: center;
+            align-self: center;
+            position: relative;
+    
+            @include tb {
+                margin: 0px;
+                margin-right: auto;
+            }
+    
+            & span {
+                font-size: 30px;
+                color: #ffffff;
+            }
+    
+            .footer-logo__photo {
+                width: 100px;
+                height: 80px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    
+        .footer-inner {
+            width: 50%;
+            justify-self: center;
+
+            @include tb {
+                width: 100%;
+            }
+    
+            .footer-contact {
+                width: 50%;
+                margin: 40px auto 0px;
+                padding-left: 10px;
+                
+                .footer-contact__link {
+                    width: 300px;
+                    display: block;
+                    margin-top: 10px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    text-decoration: none;
+
+                    p {
+                        margin-top: 10px;
+                        letter-spacing: 1px;
+
+                        &:first-child {
+                            margin-top: 0px;
+                        }
+                    }
+    
+                    &:nth-child(1) {
+                        margin-top: 0px;
+                    }
+
+                    @include tb {
+                        width: 100%;
+                    }
+                }
+
+                @include tb {
+                    margin: 0px;
+                    margin-top: 40px;
+                }
+            }
+    
+            .footer-links {
+                width: 50%;
+                margin: 40px auto 0px;
+                padding-left: 10px;
+
+                @include tb {
+                    margin: 0;
+                    margin-top: 40px;
+                }
+                
+                .footer-sns {
+                    display: inline-block;
+                    width: 180px;
+                    margin-top: 10px;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+    
+                    .footer-sns__icon {
+                        width: 16px;
+                        height: 16px;
+                    }
+    
+                    .footer-sns__link {
+                        font-weight: bold;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

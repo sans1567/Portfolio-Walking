@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Asato Satoのポートフォリオです、アクティブで清潔感のあるサイト">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>ウォーキングイベント風デザインポートフォリオ | Asato Sato</title>
+
+        <!--OGP設定-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Portfolio Walking | 日本各地で歩く健康な毎日を">
+        <meta property="og:description" content="Portfolio Walkingは日本各地のウォーキングコースを紹介する架空のイベントサイトです。コース案内や、イベント情報やガイドなど、参加の流れをわかりやすく紹介しています。">
+        <!--URL発行後に入力-->
+        <meta property="og:url" content="公開後のURL">
+        <meta property="og:site_name" content="Portfolio Walking">
+        <!--サムネイル作成後に入力-->
+        <meta property="og:image" content="https://このサイトのURL/assets/images/ogp.png">
+
+        <!--Twitter(X)-->
+        <meta name="twitter:card" content="summary_large_image">     
+        <meta name="twitter:title" content="Portfolio Walking | 日本各地で歩く健康な毎日を">
+        <meta name="twitter:description" content="Portfolio Walkingは日本各地のウォーキングコースを紹介する架空のイベントサイトです。コース案内や、イベント情報やガイドなど、参加の流れをわかりやすく紹介しています。">
+        <meta name="twitter:image" content="https://このサイトのURL/assets/images/">
+
+        <!--ファビコン-->
+        <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" sizes="32x32">
+        <link rel="icon" href="./assets/images/favicon.png" type="image/png" sizes="32x32">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Habibi&family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Teko:wght@300..700&family=Train+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="assets/js/main.js" defer></script>
+    </head>
+    <body>
+        <!--ローディング画面①-->
+        <div class="loading1">
+            <div class="loading-loader"></div>
+            <p class="loading-text"><span>portfolio_working</span></p>
+        </div>
+
+        <!--ローディング画面②-->
+        <div class="loading2"></div>
+
+        <!--ヘッダ-->
+        <header class="header" role="banner">
+	        <div class="header-wrapper">
+		        <div class="header-inner">
+			        <a href="#"><h1 class="header-logo"><span>portfolio<br>walking</span></h1></a>
+			        <!--ハンバーガーボタン-->
+			        <button 
+                        class="hamburger-button" 
+                        type="button" 
+                        aria-expanded="false"
+                        aria-controls="hamburger-menu"
+                    >
+				        <span></span>
+				        <span></span>
+				        <span></span>
+			        </button>
+                    <!--ハンバーガーメニュー-->
+                    <nav class="hamburger-menu" 
+                        id="hamburger-menu"
+                        aria-hidden="true"
+                    >
+				        <ul class="hamburger-menu__lists">
+					        <li><a href="#main-course">開催コース</a></li>
+                            <li><a href="#main-recruitment">イベント情報</a></li>
+                            <li><a href="#main-guide">参加ガイド</a></li>
+                            <li><a href="#main-volunteer">ボランティア募集</a></li>
+                            <li><a href="#main-about">サイト紹介</a></li>
+				        </ul>
+			        </nav>
+                    <!--グローバルナビゲーション-->
+			        <nav class="header-nav">
+				        <ul class="header-nav__lists">
+					        <li><a href="#main-course">開催コース</a></li>
+                            <li><a href="#main-recruitment">イベント情報</a></li>
+                            <li><a href="#main-guide">参加ガイド</a></li>
+                            <li><a href="#main-volunteer">ボランティア募集</a></li>
+                            <li><a href="#main-about">サイト紹介</a></li>
+				        </ul>
+			        </nav>
+		        </div>
+	        </div>
+        </header>
+
+        <!--main-->
+        <main class="main" role="main">
+
+            <!--main-visual-->
+            <section class="main-visual">
+                <div class="main-visual__inner">
+                    <div class="main-visual__heading">
+                        <h2 class="main-visual__title"><span>イベント開催中</span></h2> 
+                        <div class="main-visual__text">
+                            <div class="main-visual__textTrack">
+                                <p><span>ウォーキングイベントの情報を随時更新中<br>健康で活気あふれる毎日をお過ごしください</span></p>
+                            </div>
+                        </div>
+                        <a class="main-visual__link" href="#main-course"><span>開催中のイベント</span></a>
+                    </div>
+                    <div class="main-visual__viewport">
+                        <div class="main-visual__track">
+                            <div class="main-visual__slide">
+                                <img class="main-visual__photo" src="./assets/images/mv1.png" alt="動き出している女性">
+                            </div>
+                            <div class="main-visual__slide">
+                                <img class="main-visual__photo" src="./assets/images/mv2.png" alt="大会ゼッケンをつけている大人数の男性">
+                            </div>
+                            <div class="main-visual__slide">
+                                <img class="main-visual__photo" src="./assets/images/mv3.png" alt="陸上競技場を歩いている男性">
+                            </div>
+                            <div class="main-visual__slide">
+                                <img class="main-visual__photo" src="./assets/images/mv4.png" alt="大人数で街中にをウォーキングしている">
+                            </div>
+                        </div>
+                    </div>
+                    <!--スライドショー用インジケーター-->
+                    <div  class="main-visual__indicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!--スライドショー用ナビゲーター-->
+                    <div  class="main-visual__navigator">
+                        <button class="main-visual__navigator--prev" type="button"></button>
+                        <button class="main-visual__navigator--next" type="button"></button>
+                    </div>
+                </div>
+            </section>
+
+            <!--main-course-->
+            <section class="main-course" id="main-course">
+                <h2 class="main-course__title--main"><span>開催中コース</span></h2>
+                <p class="main-course__text--main">現在開催中のコースです。お好みのコースを選択してください。</p>
+                <div class="main-course__inner">
+
+                    <a class="main-course__cards main-course__link--sea" href="#main-recruitment__lists--sea">
+                        <img class="main-course__photo main-course__photo--sea" src="./assets/images/mc1.png" alt="海岸沿い道路">
+                        <h3 class="main-course__title--sub"><span>海岸沿いコース</span></h3>
+                        <p class="main-course__text—location"><span>開催場所:</span><span>ポートフォリオ県</span></p>
+                        <span class="main-course__link">詳しい情報</span>
+                    </a>
+
+                    <a class="main-course__cards main-course__link--temple" href="#main-recruitment__lists--temple">
+                        <img class="main-course__photo main-course__photo--temple" src="./assets/images/mc2.png" alt="山と寺">
+                        <h3 class="main-course__title--sub"><span>寺コース</span></h3>
+                        <p class="main-course__text—location"><span>開催場所:</span><span>ポートフォリオ県</span></p>
+                        <span class="main-course__link">詳しい情報</span>
+                    </a>
+
+                    <a class="main-course__cards main-course__link--mountain" href="#main-recruitment__lists--mountain">
+                        <img class="main-course__photo main-course__photo--mountain" src="./assets/images/mc3.png" alt="山と人">
+                        <h3 class="main-course__title--sub"><span>山コース</span></h3>
+                        <p class="main-course__text—location"><span>開催場所:</span><span>ポートフォリオ県</span></p>
+                        <span class="main-course__link">詳しい情報</span>
+                    </a>
+
+                    <a class="main-course__cards main-course__link--castle" href="#main-recruitment__lists--castle">
+                        <img class="main-course__photo main-course__photo--castle" src="./assets/images/mc4.png" alt="城と街と人">
+                        <h3 class="main-course__title--sub"><span>城下町コース</span></h3>
+                        <p class="main-course__text—location"><span>開催場所:</span><span>ポートフォリオ県</span></p>
+                        <span class="main-course__link">詳しい情報</span>
+                    </a>
+
+                    <a class="main-course__cards main-course__link--cherry" href="#main-recruitment__lists--cherry">
+                        <img class="main-course__photo main-course__photo--cherry" src="./assets/images/mc5.png" alt="桜とカップル">
+                        <h3 class="main-course__title--sub"><span>桜コース</span></h3>
+                        <p class="main-course__text—location"><span>開催場所:</span><span>ポートフォリオ県</span></p>
+                        <span class="main-course__link">詳しい情報</span>
+                    </a>
+                </div>
+                <!--エントリーボタンを押した際のモーダルウィンドウ-->
+                <div 
+                    class="main-course__modal"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-title"
+                    aria-hidden="true"
+                >
+                    <button class="main-course__modal-button--close">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <h2 class="main-course__modal-title"><span>エントリー</span></h2>
+                    <p class="main-course__modal-text">エントリーフォームを入力してください</p>
+                    <!--エラーメッセージ-->
+                    <p class="main-course__modal__message--error"></p>
+                    <form class="form" action="" method="">
+                        <label class="form-label form-label__text">
+                            <span>お名前</span>
+                            <input class="main-course__modal-input__text--name" type="text" name="text">
+                        </label>
+                        <label class="form-label form-label__email">
+                            <span>メール</span>
+                            <input class="main-course__modal-input__email" type="email" name="email">
+                        </label>
+                        <label class="form-label form-label__day">
+                            <span>参加日</span>
+                            <select class="main-course__modal-input__month">
+                                <option value="">選択</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <span>月</span>
+                            <select class="main-course__modal-input__day">
+                                <option value="">選択</option>
+                                <option value="10">10</option>
+                                <option value="17">17</option>
+                                <option value="24">24</option>
+                            </select>
+                            <span>日</span>
+                        </label>
+                        <label class="form-label form-label__text">
+                            <span>人数</span>
+                            <input class="main-course__modal-input__text--user" type="text" name="user">
+                        </label>
+                        <label class="form-label">
+                            <span>コース</span>
+                            <select class="main-course__modal-input__course">
+                                <option value="">選択</option>
+                                <option value="海岸沿いコース">海岸沿いコース</option>
+                                <option value="寺コース">寺コース</option>
+                                <option value="山コース">山コース</option>
+                                <option value="城下町コース">城下町コース</option>
+                                <option value="桜コース">桜コース</option>
+                            </select>
+                        </label>
+                        <label class="form-label form-label__message">
+                            <span>メッセージ</span>
+                            <textarea class="main-course__modal__message"></textarea>
+                        </label>
+                        <label class="form-label form-label__check">
+                            <p>利用規約に同意しますか?</p>
+                            <input class="main-course__modal-input__check" type="checkbox" name="checked">
+                        </label>
+                        <input class="main-course__modal-input__submit" type="submit" value="送信">
+                    </form>
+                    <!--送信完了メッセージ-->
+                    <p class="main-course__modal__message--success" role="alert"><span>送信に成功しました</span></p>
+                </div>
+                <!--モーダルウィンドウのオーバーレイ-->
+                <div class="modal-overlay"></div>
+            </section>
+
+            <!--main-recruitment-->
+            <section class="main-recruitment" id="main-recruitment">
+                <h2 class="main-recruitment__title"><span>イベント情報</span></h2>
+                <p class="main-recruitment__text--main">各イベントコースの詳細を確認できます。</p>
+                <div class="main-recruitment__inner">
+
+                    <div class="main-recruitment__lists main-recruitment__lists--sea" id="main-recruitment__lists--sea">
+                        <div class="main-recuitment__heading">
+                            <h3 class="main-recruitment__title—-event"><span>海岸沿いコース</span></h3>
+                            <div class="main-recruitment__text—-day">
+                                <p>開催日時:</p>
+                                <p>XXXX年/XX月/XX日</p>
+                            </div>
+                            <div class="main-recruitment__text—-event">
+                                <p>イベント情報:</p>
+                                <p>海岸線を眺めながら爽快に歩ける初心者向けのコースです。</p>
+                                <p>爽やかな道が続き、景色を楽しみながらリラックスして参加できます。</p>
+                            </div>
+                            <button 
+                                class="main-recruitment__button">エントリー</button>
+                        </div>
+                        <div class="main-recruitment__container-photo">
+                            <img class="main-recruitment__photo" src="./assets/images/mr1.png" alt="海岸と車">
+                        </div>
+                    </div>
+
+                    <div class="main-recruitment__lists main-recruitment__lists--temple" id="main-recruitment__lists--temple">
+                        <div class="main-recuitment__heading">
+                            <h3 class="main-recruitment__title—-event"><span>寺コース</span></h3>
+                            <div class="main-recruitment__text—-day">
+                                <p>開催日時:</p>
+                                <p>XXXX年/XX月/XX日</p>
+                            </div>
+                            <div class="main-recruitment__text—-event">
+                                <p>イベント情報:</p>
+                                <p>歴史ある寺院を巡る落ち着いた雰囲気のあるコースです。</p>
+                                <p>静かな環境でゆったりとした時間を過ごしたい方にオススメです。</p>
+                            </div>
+                            <button class="main-recruitment__button">エントリー</button>
+                        </div>
+                        <div class="main-recruitment__container-photo">
+                            <img class="main-recruitment__photo" src="./assets/images/mr2.png" alt="夕暮れと寺院">
+                        </div>
+                    </div>
+
+                    <div class="main-recruitment__lists main-recruitment__lists--mountain" id="main-recruitment__lists--mountain">
+                        <div class="main-recuitment__heading">
+                            <h3 class="main-recruitment__title—-event"><span>山コース</span></h3>
+                            <div class="main-recruitment__text—-day">
+                                <p>開催日時</p>
+                                <p>XXXX年/XX月/XX日</p>
+                            </div>
+                            <div class="main-recruitment__text—-event">
+                                <p>イベント情報:</p>
+                                <p>自然豊かな山道を歩くアクティブなコースです。</p>
+                                <p>適度なアップダウンがあり,運動不足解消やリフレッシュに最適です。</p>
+                            </div>
+                            <button class="main-recruitment__button">エントリー</button>
+                        </div>
+                        <div class="main-recruitment__container-photo">
+                            <img class="main-recruitment__photo" src="./assets/images/mr3.png" alt="ウォーキング中の男性と山の中">
+                        </div>
+                    </div>
+
+                    <div class="main-recruitment__lists main-recruitment__lists--castle" id="main-recruitment__lists--castle">
+                        <div class="main-recuitment__heading">
+                            <h3 class="main-recruitment__title—-event"><span>城下町コース</span></h3>
+                            <div class="main-recruitment__text—-day">
+                                <p>開催日時</p>
+                                <p>XXXX年/XX月/XX日</p>
+                            </div>
+                            <div class="main-recruitment__text—-event">
+                                <p>イベント情報:</p>
+                                <p>歴史的な街並みを楽しめる人気コースです。</p>
+                                <p>観光気分で歩きながら,写真撮影にもオススメです。</p>
+                            </div>
+                            <button class="main-recruitment__button">エントリー</button>
+                        </div>
+                        <div class="main-recruitment__container-photo">
+                            <img class="main-recruitment__photo" src="./assets/images/mr4.png" alt="城と桜">
+                        </div>
+                    </div>
+
+                    <div class="main-recruitment__lists main-recruitment__lists--cherry" id="main-recruitment__lists--cherry">
+                        <div class="main-recuitment__heading">
+                            <h3 class="main-recruitment__title—-event"><span>桜コース</span></h3>
+                            <div class="main-recruitment__text—-day">
+                                <p>開催日時</p>
+                                <p>XXXX年/XX月/XX日</p>
+                            </div>
+                            <div class="main-recruitment__text—-event">
+                                <p>イベント情報:</p>
+                                <p>満開の桜を楽しめる季節限定コースです。</p>
+                                <p>春の景色を満喫しながら、ゆったりとウォーキングを楽しめます。</p>
+                            </div>
+                            <button class="main-recruitment__button">エントリー</button>
+                        </div>
+                        <div class="main-recruitment__container-photo">
+                            <img class="main-recruitment__photo" src="./assets/images/mr5.png" alt="桜のアップ">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--main-guide-->
+            <section class="main-guide" id="main-guide">
+                <h2 class="main-guide__title"><span>参加ガイド</span></h2>
+                <p class="main-guide__text--main">参加に備えて準備や当日の流れなど確認できます。</p>
+                <img class="main-guide__photo" src="./assets/images/mg.png" alt="受付をしている人達">
+                <div class="main-guide__inner">
+                    <div class="main-guide__lists">
+                        <h3 class="main-guide__lists-title">①事前準備</h3>
+                        <p class="main-guide__lists-text">
+                            参加前に動きやすい服装やシューズをご準備ください。<br>
+                            水分補給のための飲み物やタオルの持参もおすすめです。
+                        </p>
+                        <img class="main-guide__lists-photo" src="./assets/images/mgl1.png" alt="水色のペットボトル">
+                    </div>
+                    <div class="main-guide__lists">
+                        <h3 class="main-guide__lists-title">②当日の流れ</h3>
+                        <p class="main-guide__lists-text">
+                            受付後、スタッフの案内に従ってイベントがスタートします。<br>
+                            初心者の方でも安心して参加できるようにサポートいたします。
+                        </p>
+                        <img class="main-guide__lists-photo" src="./assets/images/mgl2.png" alt="黒い人が受付をしている">
+                    </div>
+                    <div class="main-guide__lists">
+                        <h3 class="main-guide__lists-title">③参加時のポイント</h3>
+                        <p class="main-guide__lists-text">
+                            無理せず自分のペースで楽しみましょう。<br>
+                            体調に不安がある場合はスタッフまでお気軽にご相談ください。
+                        </p>
+                        <img class="main-guide__lists-photo" src="./assets/images/mgl3.png" alt="グーポーズをしている男の人">
+                    </div>
+                    <div class="main-guide__lists">
+                        <h3 class="main-guide__lists-title">④雨天時の対応</h3>
+                        <p class="main-guide__lists-text">
+                            小雨の場合は予定通り開催いたします。<br>
+                            荒天時は安全を考慮し中止となる場合がございます。<br>
+                            その際は事前にメールまたは公式サイトにてお知らせいたします。
+                        </p>
+                        <img class="main-guide__lists-photo" src="./assets/images/mgl4.png" alt="青色の傘">
+                    </div>
+                    <div class="main-guide__lists">
+                        <h3 class="main-guide__lists-title">⑤キャンセルについて</h3>
+                        <p class="main-guide__lists-text">
+                            キャンセルをご希望の場合は、開催前日までにご連絡お願いいたします。<br>
+                            当日キャンセルにつきましては、キャンセル料が発生する場合がございますのでご了承ください。
+                        </p>
+                        <img class="main-guide__lists-photo" src="./assets/images/mgl5.png" alt="黒い人の上にバツマーク">
+                    </div>
+                    <div class="main-guide__lists">
+                        <h3 class="main-guide__lists-title">⑥初心者の方へ</h3>
+                        <p class="main-guide__lists-text">
+                            初心者の方でも安心してご参加いただけます。<br>
+                            経験豊富なスタッフが丁寧にサポートいたしますので、お気軽にご参加ください。
+                        </p>
+                        <img class="main-guide__lists-photo" src="./assets/images/mgl6.png" alt="初心者マーク">
+                    </div>
+                </div>
+            </section>
+
+            <!--main-volunteer-->
+            <section class="main-volunteer" id="main-volunteer">
+                <div class="main-volunteer__inner">
+                    <img class="main-volunteer__photo" src="./assets/images/mvo.png" alt="三つの手とハートが中心">
+                    <div class="main-volunteer__text">
+                        <p>イベントを一緒に盛り上げてくれるボランティアを募集しています。</p>
+                        <p>未経験の方も大歓迎!簡単なサポート業務が中心なので安心してご参加いただけます。</p>
+                        <p>人と関わるのが好きな方、イベント運営に興味ある方はぜひご参加ください。</p>
+                    </div>
+                    <button class="main-volunteer__link" type="button">詳しくはこちら</button>
+                </div>
+                <img class="main-volunteer__photo--between" src="./assets/images/mvb.png" alt="">
+            </section>
+
+            <!--main-about-->
+            <section class="main-about" id="main-about">
+                <h2 class="main-about__title--main"><span>サイト紹介</span></h2>
+                <p class="main-about__text--main">このWebサイトの紹介です。</p>
+                <div class="main-about__inner">
+                    <img class="main-about__photo" src="./assets/images/map.png" alt="二人の人が歩いてる">
+                    <div class="main-about__text main-about__text--concept">
+                        <h3 class="main-about__title--sub">サイト紹介</h3>
+                        <p>ウォーキングイベントを探している20~30代の男女をターゲットに</p>
+                        <p>大会情報やコースをわかりやすく閲覧できるサイトとして制作しました。</p>
+                        <p>カードなどのUIを活用し、目的に情報に素早くアクセスできる設計を意識しています。</p>
+                    </div>
+                    <div class="main-about__text main-about__text--concept">
+                        <h3 class="main-about__title--sub">コンセプト</h3>
+                        <p>自分自身がウォーキングが好きで、休みの日などに</p>
+                        <p>手軽にイベントを探せるサイトがあればいいと思い制作しました。</p>
+                        <p>余白とシンプルな色合いで操作する人が直感的に操作しやすいようなUIを意識しています。</p>
+                    </div>
+                    <div class="main-about__text main-about__text--design">
+                        <h3 class="main-about__title--sub">デザイン</h3>
+                        <p>白✖️グレー✖️青</p>
+                        <p>白とグレーをベースに使用し随所にアクセントで青を使用して清涼感と見やすさを意識したデザインを意識しました。</p>
+                    </div>
+                    <div class="main-about__text main-about__text--skills">
+                        <h3 class="main-about__title--sub">こだわり</h3>
+                        <p>アニメーションを随所に取り入れて少しでも動きのあるサイトにしてみました。</p>
+                        <p>またコース選択をカード形式にすることによって</p>
+                        <p>ワンクリックでコース詳細を確認できるようにし、</p>
+                        <p>ユーザーの操作負担を軽減しています。</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!--footerー-->
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <h2 class="footer-logo">
+                    <span>portfolio<br>working</span>
+                    <img class="footer-logo__photo" src="./assets/images/fl.png" alt="">
+                </h2>
+                <div class="footer-inner">
+                    <div class="footer-contact">
+                        <a  class="footer-contact__link" href="#">お問い合わせはこちら</a>
+                        <a  class="footer-contact__link" href="#">よくあるご質問</a>
+                        <div  class="footer-contact__link" href="#">
+                            <p>お問い合わせ先の住所</p><br>
+                            <p>〒123-4567(ダミー)</p>
+                            <p>石川県小松市ポートフォリオ町</p>
+                            <p>TEL:1234-56-7890(ダミー)</p>
+                            <p>Email:example.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <a class="footer-sns" href="#">
+                            <img class="footer-sns__icon" src="./assets/images/icon1.png" alt="インスタグラムアイコン">
+                            <span class="footer-sns__link footer-link--instagram">instagram</span>
+                        </a>
+                        <a class="footer-sns" href="#">
+                            <img class="footer-sns__icon" src="./assets/images/icon2.png" alt="インスタグラムアイコン">
+                            <span class="footer-sns__link footer-link--facebook">facebook</span>
+                        </a>
+                        <a class="footer-sns" href="#">
+                            <img class="footer-sns__icon" src="./assets/images/icon3.png" alt="インスタグラムアイコン">
+                            <span class="footer-sns__link footer-link--x">X</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--スクロールボタン-->
+        <button class="scroll-btn" type="button"></button>
+    </body>
+</html>
