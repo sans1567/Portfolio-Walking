@@ -1593,6 +1593,13 @@ body {
   font-weight: bold;
   color: #ffffff;
 }
+.footer .footer-copyright {
+  width: 100%;
+  text-align: center;
+}
+.footer .footer-copyright span {
+  color: #ffffff;
+}
 
 /*ハンバーガーボタン*/
 .hamburger-button {
