@@ -717,7 +717,7 @@ body {
   border-radius: 12px;
   background-color: #ffffff;
   position: fixed;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 4;
@@ -745,7 +745,7 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 20px;
   cursor: pointer;
 }
@@ -1778,7 +1778,6 @@ body {
   /*3秒後非表示*/
   opacity: 1;
   transition: all 1s ease;
-  display: none;
 }
 .loading1.fadeOut {
   opacity: 0;
@@ -1795,7 +1794,6 @@ body {
   right: 0;
   bottom: 0;
   transform: translateY(-100vh);
-  display: none;
 }
 
 .loading-text {
