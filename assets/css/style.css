@@ -703,7 +703,9 @@ body {
   display: grid;
   place-items: center;
 }
-
+.main-course {
+  /*エントリーボタン押した時のモーダルウィンドウ*/
+}
 .main-course .main-course__modal {
   width: 100%;
   max-width: 650px;
@@ -874,7 +876,9 @@ body {
 .main-course .main-course__modal .form .main-course__modal-input__submit:hover {
   opacity: 0.5;
 }
-
+.main-course .main-course__modal {
+  /*送信成功時メッセージ*/
+}
 .main-course .main-course__modal .main-course__modal__message--success {
   width: 95vw;
   max-width: 680px;
@@ -906,7 +910,9 @@ body {
   width: 100%;
   font-weight: bold;
 }
-
+.main-course {
+  /*モーダルウィンドウのオーバーレイ*/
+}
 .main-course .modal-overlay {
   width: 100vw;
   height: 100vh;
@@ -1119,7 +1125,7 @@ body {
 }
 @media (max-width: 1000px) {
   .main-guide .main-guide__inner {
-    grid-template-columns: 75%;
+    grid-template-columns: 100%;
     grid-template-rows: 340px 340px 340px 340px 340px 340px;
     row-gap: 40px;
   }
@@ -1128,6 +1134,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 0px 20px;
+  margin: 0 auto;
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   display: grid;
@@ -1139,12 +1146,6 @@ body {
 .main-guide .main-guide__inner .main-guide__lists.is-show {
   opacity: 1;
   transform: translateY(0px);
-}
-@media (max-width: 390px) {
-  .main-guide .main-guide__inner .main-guide__lists {
-    width: 300px;
-    margin: 0 auto;
-  }
 }
 .main-guide .main-guide__inner .main-guide__lists:nth-child(1) {
   background-color: #f0f8ff;
@@ -1223,12 +1224,12 @@ body {
 }
 @media (max-width: 768px) {
   .main-volunteer .main-volunteer__inner .main-volunteer__text p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media (max-width: 390px) {
   .main-volunteer .main-volunteer__inner .main-volunteer__text p {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 .main-volunteer .main-volunteer__inner .main-volunteer__link {
@@ -1440,7 +1441,7 @@ body {
 }
 .main-about .main-about__inner .main-about__text {
   width: 100%;
-  max-width: 800px;
+  max-width: 1280px;
   margin: 80px auto 0px;
   padding: 40px 20px;
   border: 2px solid rgba(0, 0, 0, 0.5);
@@ -1464,12 +1465,12 @@ body {
 }
 @media (max-width: 768px) {
   .main-about .main-about__inner .main-about__text p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media (max-width: 390px) {
   .main-about .main-about__inner .main-about__text p {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
@@ -1491,7 +1492,7 @@ body {
   }
 }
 .footer .footer-wrapper .footer-logo {
-  width: 50%;
+  width: 70%;
   height: 80px;
   margin: 0px auto;
   padding-left: 110px;
@@ -1517,7 +1518,7 @@ body {
   left: 0;
 }
 .footer .footer-wrapper .footer-inner {
-  width: 50%;
+  width: 30%;
   justify-self: center;
 }
 @media (max-width: 768px) {
@@ -1526,12 +1527,11 @@ body {
   }
 }
 .footer .footer-wrapper .footer-inner .footer-contact {
-  width: 50%;
-  margin: 40px auto 0px;
-  padding-left: 10px;
+  width: 100%;
+  margin-top: 40px;
 }
 .footer .footer-wrapper .footer-inner .footer-contact .footer-contact__link {
-  width: 300px;
+  width: 100%;
   display: block;
   margin-top: 10px;
   font-weight: bold;
@@ -1561,8 +1561,7 @@ body {
 }
 .footer .footer-wrapper .footer-inner .footer-links {
   width: 50%;
-  margin: 40px auto 0px;
-  padding-left: 10px;
+  margin-top: 40px;
 }
 @media (max-width: 768px) {
   .footer .footer-wrapper .footer-inner .footer-links {
