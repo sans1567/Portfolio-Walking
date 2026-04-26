@@ -73,6 +73,7 @@ html {
 
 body {
   color: rgba(0, 0, 0, 0.8);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
 }
 
 .header-wrapper {
@@ -744,7 +745,7 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  top: -20px;
+  top: 20px;
   right: 20px;
   cursor: pointer;
 }
@@ -1777,6 +1778,7 @@ body {
   /*3秒後非表示*/
   opacity: 1;
   transition: all 1s ease;
+  display: none;
 }
 .loading1.fadeOut {
   opacity: 0;
@@ -1793,6 +1795,7 @@ body {
   right: 0;
   bottom: 0;
   transform: translateY(-100vh);
+  display: none;
 }
 
 .loading-text {
