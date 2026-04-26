@@ -703,9 +703,7 @@ body {
   display: grid;
   place-items: center;
 }
-.main-course {
-  /*エントリーボタン押した時のモーダルウィンドウ*/
-}
+
 .main-course .main-course__modal {
   width: 100%;
   max-width: 650px;
@@ -876,9 +874,7 @@ body {
 .main-course .main-course__modal .form .main-course__modal-input__submit:hover {
   opacity: 0.5;
 }
-.main-course .main-course__modal {
-  /*送信成功時メッセージ*/
-}
+
 .main-course .main-course__modal .main-course__modal__message--success {
   width: 95vw;
   max-width: 680px;
@@ -910,9 +906,7 @@ body {
   width: 100%;
   font-weight: bold;
 }
-.main-course {
-  /*モーダルウィンドウのオーバーレイ*/
-}
+
 .main-course .modal-overlay {
   width: 100vw;
   height: 100vh;
@@ -1784,8 +1778,6 @@ body {
   /*3秒後非表示*/
   opacity: 1;
   transition: all 1s ease;
-  /*作業終了後解除*/
-  display: none;
 }
 .loading1.fadeOut {
   opacity: 0;
@@ -1802,8 +1794,6 @@ body {
   right: 0;
   bottom: 0;
   transform: translateY(-100vh);
-  /*作業終了後解除*/
-  display: none;
 }
 
 .loading-text {
