@@ -11,9 +11,6 @@
     opacity: 1;
     transition: all 1s ease;
 
-    /*作業終了後解除*/
-    display: none;
-
     &.fadeOut {
         opacity: 0;
     }
@@ -30,9 +27,6 @@
   right: 0;
   bottom: 0;
   transform: translateY(-100vh);
-
-  /*作業終了後解除*/
-  display: none;
 }
 
 .loading-text {
